@@ -263,8 +263,6 @@ header {
     margin-bottom: 38px;
 }
 
-/* PROJECTS */
-
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -403,8 +401,6 @@ header {
     line-height: 1.7;
 }
 
-/* EXPERIENCE */
-
 .experience-list {
     max-width: 950px;
 }
@@ -442,8 +438,6 @@ header {
     color: var(--muted);
     font-size: 13px;
 }
-
-/* EDUCATION */
 
 .education-card {
     display: grid;
@@ -485,8 +479,6 @@ header {
     font-size: 13px;
     margin-bottom: 8px;
 }
-
-/* CONTACT */
 
 .contact-section {
     padding-bottom: 110px;
@@ -530,8 +522,6 @@ header {
     color: var(--rose);
 }
 
-/* FOOTER */
-
 footer {
     max-width: 1180px;
     margin: auto;
@@ -542,8 +532,6 @@ footer {
     color: #77717c;
     font-size: 11px;
 }
-
-/* TABLET */
 
 @media (max-width: 950px) {
 
@@ -597,8 +585,6 @@ footer {
         padding-top: 25px;
     }
 }
-
-/* MOBILE */
 
 @media (max-width: 650px) {
 
