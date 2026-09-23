@@ -358,7 +358,12 @@ header {
 }
 
 .project-card[open] .view-details {
-    display: none;
+    font-size: 0;
+}
+
+.project-card[open] .view-details::after {
+    content: "Hide Details";
+    font-size: 11px;
 }
 
 .project-details {
