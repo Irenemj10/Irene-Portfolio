@@ -263,15 +263,20 @@ header {
     margin-bottom: 38px;
 }
 
+/* PROJECTS */
+
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 18px;
+    align-items: start;
 }
 
 .project-card {
+    width: 100%;
     background: var(--surface);
     border: 1px solid var(--border);
+    overflow: hidden;
 }
 
 .project-card:hover {
@@ -357,7 +362,9 @@ header {
 }
 
 .project-details {
+    width: 100%;
     padding: 25px;
+    background: var(--surface);
     border-top: 1px solid var(--border);
 }
 
@@ -366,12 +373,11 @@ header {
     font-family: Georgia, serif;
     font-size: 16px;
     font-weight: normal;
-    margin-top: 20px;
-    margin-bottom: 7px;
+    margin: 0 0 7px;
 }
 
-.project-details h4:first-child {
-    margin-top: 0;
+.project-details h4:not(:first-child) {
+    margin-top: 20px;
 }
 
 .project-details p {
@@ -391,6 +397,8 @@ header {
     font-size: 13px;
     line-height: 1.7;
 }
+
+/* EXPERIENCE */
 
 .experience-list {
     max-width: 950px;
@@ -429,6 +437,8 @@ header {
     color: var(--muted);
     font-size: 13px;
 }
+
+/* EDUCATION */
 
 .education-card {
     display: grid;
@@ -470,6 +480,8 @@ header {
     font-size: 13px;
     margin-bottom: 8px;
 }
+
+/* CONTACT */
 
 .contact-section {
     padding-bottom: 110px;
@@ -513,6 +525,8 @@ header {
     color: var(--rose);
 }
 
+/* FOOTER */
+
 footer {
     max-width: 1180px;
     margin: auto;
@@ -523,6 +537,8 @@ footer {
     color: #77717c;
     font-size: 11px;
 }
+
+/* TABLET */
 
 @media (max-width: 950px) {
 
@@ -577,6 +593,8 @@ footer {
     }
 }
 
+/* MOBILE */
+
 @media (max-width: 650px) {
 
     .navbar {
@@ -618,8 +636,16 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    .project-card {
+        width: 100%;
+    }
+
     .project-card summary {
         min-height: 310px;
+    }
+
+    .project-details {
+        padding: 22px;
     }
 
     .experience-item {
